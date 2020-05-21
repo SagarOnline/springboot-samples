@@ -19,15 +19,15 @@ Open a command prompt and go to directory 'springboot-samples/hello-world'. Foll
 
 #### Build Docker Image of the  application
 
-* run command ``` docker build -t hello-world:latest  . ``` . This will create a build the docker image of the application with image name:tag  'hello-world:latest'.
+* run command ``` docker build -t hello-world:latest  . ```  This will create a docker image of the application with name  'hello-world:latest'
 
 * To view the docker image just created , run command ``` docker images```
 
 #### Run application in Docker Container
 
-* Run command to run appliation in docker container
+* To run an appliation inside docker container, execute command
 ``` docker run  --rm -it --name hello-world -p 8080:8080 hello-world:latest ``` 
-This will start application on port 8080. Open url 
+This will start an application on port 8080. Open url 
   ``` http://localhost:8080/ ``` to test the application.
  
 * Press Ctrl+c to close the application
